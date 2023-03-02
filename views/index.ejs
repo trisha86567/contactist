@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            color:black;
+        
+        }
+    </style>
+    <title>Contact list</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+           <h1>contact list</h1>
+
+           
+    <% for (index of list){ %>
+    <ul>
+        <li >
+            <h1><%= index.name  %></h1>
+            
+          
+            <%= index.phone  %><br>
+            <%=  index.address %>
+            <br>
+
+            
+         
+  
+            
+        </li>
+    </ul>
+    <% } %>
+</body>
+</html>
+

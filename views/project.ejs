@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            color:black;
+        
+        }
+    </style>
+    <title>Contact list</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+
+
+   
+    
+           <h1>contact list</h1>
+
+
+    <% for (index of list){ %>
+    <ul>
+        <li>
+            <a href= "/delete/<%= index._id %>">
+                <p>❌</p></a>
+     
+            <h1><%= index.name  %></h1>
+ 
+            <%= index.phone  %><br>
+            <%=  index.address %>
+            <br>
+            
+         
+  
+            
+        </li>
+    </ul>
+    <% } %>
+
+    <form action="create" method="post">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="phone" placeholder="phone" >
+        <button  type="submit">ADD CONTACT</button>
+    </form>
+</body>
+</html>
+
